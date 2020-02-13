@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'abolition';
+  src: url('../fonts/Abolition Sharp.otf') format('otf');
+}
+
 #bgvideo {
   position: fixed;
   right: 0;
@@ -13,5 +18,32 @@
 	right:0;
 	bottom:0;
 	margin:auto;
+  transition: 1s ease;
 }
+
+#indexlogo:hover {
+  opacity: 0.6;
+}
+
+.vertical-menu {
+  width: 300px;
+  font-family: 'abolition',sans-serif;
+  font-size: 35px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
 }
