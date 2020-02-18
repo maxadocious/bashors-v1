@@ -25,6 +25,16 @@
   opacity: 0.6;
 }
 
+aside {
+  padding: 50px;
+  width: 300px;
+  background-color: white;
+}
+
+#menulogo {
+  padding-bottom: 50px;
+}
+
 .vertical-menu {
   width: 300px;
   font-family: 'abolition',sans-serif;
@@ -32,7 +42,6 @@
 }
 
 .vertical-menu a {
-  background-color: #eee;
   color: black;
   display: block;
   padding: 12px;
@@ -40,10 +49,52 @@
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  background-color: #eaede8;
+  transition: .5s ease-in-out;
 }
 
 .vertical-menu a.active {
-  background-color: #4CAF50;
+  background-color: #11863c;
   color: white;
+}
+
+body {
+  display: flex;
+}
+
+section {
+  display: block;
+  animation: slideMe 3s;
+}
+
+section h1{
+  font-family: 'abolition',sans-serif;
+  font-size: 75px;
+  color: #11863c;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+}
+
+section p{
+  font-family: 'Futura PT',sans-serif;
+  font-size: 25px;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+
+@keyframes slideMe{
+  0% {
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
