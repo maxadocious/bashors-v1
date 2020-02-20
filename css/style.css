@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'abolition';
-  src: url('../fonts/Abolition Sharp.otf') format('otf');
+    font-family: 'abolition';
+    src: url('../fonts/abolition-sharp-webfont.woff2') format('woff2'),
+         url('../fonts/abolition-sharp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 #bgvideo {
@@ -28,6 +32,7 @@
 aside {
   padding: 50px;
   width: 300px;
+  z-index: 1;
   background-color: white;
 }
 
@@ -49,7 +54,7 @@ aside {
 }
 
 .vertical-menu a:hover {
-  background-color: #eaede8;
+  background-color: #f2f2f2;
   transition: .5s ease-in-out;
 }
 
@@ -58,13 +63,24 @@ aside {
   color: white;
 }
 
-body {
+main {
   display: flex;
+}
+
+footer{
+  padding-top: 100px;
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: 'Futura PT',sans-serif;
+  font-size: 12px;
 }
 
 section {
   display: block;
-  animation: slideMe 3s;
+  z-index:-1;
+  animation: slideMe 2s;
 }
 
 section h1{
